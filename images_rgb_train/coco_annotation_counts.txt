@@ -1,0 +1,18 @@
++---------------+--------+
+| Label Name    | Count  |
++---------------+--------+
+| person        | 35,007 |
+| bike          | 7,560  |
+| car           | 71,281 |
+| motor         | 1,837  |
+| bus           | 1,879  |
+| train         | 9      |
+| truck         | 1,251  |
+| light         | 18,640 |
+| hydrant       | 990    |
+| sign          | 29,531 |
+| skateboard    | 412    |
+| stroller      | 38     |
+| scooter       | 41     |
+| other vehicle | 698    |
++---------------+--------+

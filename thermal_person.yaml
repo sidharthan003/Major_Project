@@ -1,0 +1,19 @@
+# thermal_person.yaml
+# ─────────────────────────────────────────────────────────────────────────────
+# YOLOv8 dataset configuration for thermal human detection.
+# Run  python prepare_data.py  first to populate the paths below.
+# ─────────────────────────────────────────────────────────────────────────────
+
+# Absolute path to the dataset root (directory that contains images/ & labels/)
+path: dataset   # relative to the project root;
+                # change to an absolute path if you run training from elsewhere.
+
+train: images/train
+val:   images/val
+
+# Number of classes
+nc: 1
+
+# Class names
+names:
+  0: person

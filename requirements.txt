@@ -1,0 +1,10 @@
+# requirements.txt — Thermal Human Detection (ADAS)
+# Install with:  pip install -r requirements.txt
+
+ultralytics>=8.2.0       # YOLOv8 — model, training & inference API
+opencv-python>=4.9.0     # image / video I/O and visualisation
+torch>=2.1.0             # PyTorch (CUDA build recommended)
+torchvision>=0.16.0
+Pillow>=10.0.0
+numpy>=1.24.0
+PyYAML>=6.0
