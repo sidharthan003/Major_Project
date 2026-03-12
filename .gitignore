@@ -30,7 +30,17 @@ coco.json
 index.json
 
 # ── YOLOv8 training runs ──────────────────────────────────────────────────────
-runs/
+# runs/ is fully tracked so teammates can review training results (weights + images included)
+!runs/
+!runs/**
+!runs/**/*.pt
+!runs/**/*.pth
+!runs/**/*.jpg
+!runs/**/*.jpeg
+!runs/**/*.png
+!runs/**/*.bmp
+!runs/**/*.tiff
+!runs/**/*.tif
 
 # ── Model weights ─────────────────────────────────────────────────────────────
 *.pt
