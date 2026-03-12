@@ -29,19 +29,6 @@ dataset/
 coco.json
 index.json
 
-# ── YOLOv8 training runs ──────────────────────────────────────────────────────
-# runs/ is fully tracked so teammates can review training results (weights + images included)
-!runs/
-!runs/**
-!runs/**/*.pt
-!runs/**/*.pth
-!runs/**/*.jpg
-!runs/**/*.jpeg
-!runs/**/*.png
-!runs/**/*.bmp
-!runs/**/*.tiff
-!runs/**/*.tif
-
 # ── Model weights ─────────────────────────────────────────────────────────────
 *.pt
 *.pth
@@ -58,6 +45,22 @@ index.json
 
 # ── OS ────────────────────────────────────────────────────────────────────────
 .DS_Store
+
+# ── YOLOv8 training runs (exceptions — must be LAST to override rules above) ──
+# Fully track runs/ including weights (.pt) and images for teammate review
+!runs/
+!runs/**/
+!runs/**/*.pt
+!runs/**/*.pth
+!runs/**/*.onnx
+!runs/**/*.jpg
+!runs/**/*.jpeg
+!runs/**/*.png
+!runs/**/*.bmp
+!runs/**/*.tiff
+!runs/**/*.tif
+!runs/**/weights/
+!runs/**/weights/*
 Thumbs.db
 desktop.ini
 
