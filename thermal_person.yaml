@@ -1,6 +1,6 @@
 # thermal_person.yaml
 # ─────────────────────────────────────────────────────────────────────────────
-# YOLOv8 dataset configuration for thermal human detection.
+# YOLOv8n dataset configuration for thermal human detection.
 # Run  python prepare_data.py  first to populate the paths below.
 # ─────────────────────────────────────────────────────────────────────────────
 

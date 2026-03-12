@@ -23,7 +23,7 @@ DATASET_YAML = Path(__file__).parent / "thermal_person.yaml"
 #   yolov8m.pt  – medium (good balance for ADAS use-cases)
 #   yolov8l.pt  – large
 #   yolov8x.pt  – xlarge (highest accuracy, slowest)
-DEFAULT_WEIGHTS  = "yolov8m.pt"
+DEFAULT_WEIGHTS  = "yolov8s.pt"
 DEFAULT_EPOCHS   = 50
 DEFAULT_IMGSZ    = 640
 DEFAULT_BATCH    = 16          # reduce to 8 or 4 if you run out of VRAM
