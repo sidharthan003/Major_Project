@@ -1,0 +1,27 @@
+<annotation>
+  <folder>plane</folder>
+  <filename>000436_plane.jpg</filename>
+  <source>
+    <database>Unknown</database>
+    <annotation>Unknown</annotation>
+    <image>Unknown</image>
+  </source>
+  <size>
+    <width>1024</width>
+    <height>646</height>
+    <depth/>
+  </size>
+  <segmented>0</segmented>
+  <object>
+    <name>plane</name>
+    <truncated>0</truncated>
+    <occluded>0</occluded>
+    <difficult>0</difficult>
+    <bndbox>
+      <xmin>443.75</xmin>
+      <ymin>193.82</ymin>
+      <xmax>490.0</xmax>
+      <ymax>238.1</ymax>
+    </bndbox>
+  </object>
+</annotation>

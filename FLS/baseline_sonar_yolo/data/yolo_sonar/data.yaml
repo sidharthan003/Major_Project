@@ -1,0 +1,8 @@
+path: E:\workout_programs\MAJOR PROJECT\FLS\baseline_sonar_yolo\data\yolo_sonar
+train: images/train
+val: images/val
+test: images/test
+names:
+- victim
+- boat
+- plane

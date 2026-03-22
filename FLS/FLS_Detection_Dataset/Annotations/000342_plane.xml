@@ -1,0 +1,37 @@
+<annotation>
+  <folder>plane</folder>
+  <filename>000342_plane.jpg</filename>
+  <source>
+    <database>Unknown</database>
+    <annotation>Unknown</annotation>
+    <image>Unknown</image>
+  </source>
+  <size>
+    <width>1024</width>
+    <height>646</height>
+    <depth/>
+  </size>
+  <segmented>0</segmented>
+  <object>
+    <name>plane</name>
+    <truncated>0</truncated>
+    <occluded>0</occluded>
+    <difficult>0</difficult>
+    <bndbox>
+      <xmin>369.4</xmin>
+      <ymin>160.58</ymin>
+      <xmax>421.4</xmax>
+      <ymax>210.0</ymax>
+    </bndbox>
+    <attributes>
+      <attribute>
+        <name>track_id</name>
+        <value>34</value>
+      </attribute>
+      <attribute>
+        <name>keyframe</name>
+        <value>True</value>
+      </attribute>
+    </attributes>
+  </object>
+</annotation>

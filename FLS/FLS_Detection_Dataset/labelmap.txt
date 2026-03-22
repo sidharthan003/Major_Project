@@ -1,0 +1,5 @@
+# label:color_rgb:parts:actions
+background:0,0,0::
+victim:128,0,0::
+boat:0,128,0::
+plane:128,128,0::

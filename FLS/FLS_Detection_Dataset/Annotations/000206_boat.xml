@@ -1,0 +1,27 @@
+<annotation>
+  <folder>boat</folder>
+  <filename>000206_boat.jpg</filename>
+  <source>
+    <database>Unknown</database>
+    <annotation>Unknown</annotation>
+    <image>Unknown</image>
+  </source>
+  <size>
+    <width>1024</width>
+    <height>646</height>
+    <depth/>
+  </size>
+  <segmented>0</segmented>
+  <object>
+    <name>boat</name>
+    <truncated>0</truncated>
+    <occluded>0</occluded>
+    <difficult>0</difficult>
+    <bndbox>
+      <xmin>472.99</xmin>
+      <ymin>96.8</ymin>
+      <xmax>531.6</xmax>
+      <ymax>120.7</ymax>
+    </bndbox>
+  </object>
+</annotation>

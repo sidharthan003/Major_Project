@@ -1,0 +1,10 @@
+{
+  "model": "yolov8n.pt",
+  "data_yaml": "E:\\workout_programs\\MAJOR PROJECT\\FLS\\baseline_sonar_yolo\\data\\yolo_sonar\\data.yaml",
+  "mAP50": 0.995,
+  "mAP50_95": 0.8997654556844208,
+  "precision": 0.9982217648582944,
+  "recall": 1.0,
+  "run_dir": "E:\\workout_programs\\MAJOR PROJECT\\FLS\\baseline_sonar_yolo\\runs\\detect\\sonar_baseline",
+  "checkpoints_saved": true
+}

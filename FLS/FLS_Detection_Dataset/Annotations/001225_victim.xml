@@ -1,0 +1,27 @@
+<annotation>
+  <folder>victim</folder>
+  <filename>001225_victim.jpg</filename>
+  <source>
+    <database>Unknown</database>
+    <annotation>Unknown</annotation>
+    <image>Unknown</image>
+  </source>
+  <size>
+    <width>1024</width>
+    <height>644</height>
+    <depth/>
+  </size>
+  <segmented>0</segmented>
+  <object>
+    <name>victim</name>
+    <truncated>0</truncated>
+    <occluded>0</occluded>
+    <difficult>0</difficult>
+    <bndbox>
+      <xmin>416.16</xmin>
+      <ymin>106.11</ymin>
+      <xmax>549.08</xmax>
+      <ymax>219.5</ymax>
+    </bndbox>
+  </object>
+</annotation>
