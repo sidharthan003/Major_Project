@@ -46,21 +46,21 @@ index.json
 # ── OS ────────────────────────────────────────────────────────────────────────
 .DS_Store
 
-# ── YOLOv8 training runs (exceptions — must be LAST to override rules above) ──
-# Fully track runs/ including weights (.pt) and images for teammate review
-!runs/
-!runs/**/
-!runs/**/*.pt
-!runs/**/*.pth
-!runs/**/*.onnx
-!runs/**/*.jpg
-!runs/**/*.jpeg
-!runs/**/*.png
-!runs/**/*.bmp
-!runs/**/*.tiff
-!runs/**/*.tif
-!runs/**/weights/
-!runs/**/weights/*
+# ── YOLO training runs (exceptions — must be LAST to override rules above) ──
+# Track outputs/weights under any module path, e.g. ADAS/runs or FLS/*/runs.
+!**/runs/
+!**/runs/**
+!**/runs/**/*.pt
+!**/runs/**/*.pth
+!**/runs/**/*.onnx
+!**/runs/**/*.jpg
+!**/runs/**/*.jpeg
+!**/runs/**/*.png
+!**/runs/**/*.bmp
+!**/runs/**/*.tiff
+!**/runs/**/*.tif
+!**/runs/**/weights/
+!**/runs/**/weights/*
 Thumbs.db
 desktop.ini
 
