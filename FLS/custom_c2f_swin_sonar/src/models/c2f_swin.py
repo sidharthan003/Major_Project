@@ -44,14 +44,38 @@ class SwinWindowBlock(nn.Module):
 
 class C2f_Swin(nn.Module):
     # Compatible with YOLO YAML parser params
-    def __init__(self, c1, c2, n=1, shortcut=False, g=1, e=0.5, heads=4, ws=8):
+    def __init__(self, c1, c2=None, n=1, shortcut=False, g=1, e=0.5, heads=4, ws=8):
         super().__init__()
-        self.c = int(c2 * e)
-        self.cv1 = Conv(c1, 2 * self.c, 1, 1)
-        self.cv2 = Conv((2 + n) * self.c, c2, 1, 1)
-        self.m = nn.ModuleList(SwinWindowBlock(self.c, heads=heads, ws=ws) for _ in range(n))
+        # Ultralytics may instantiate custom modules as m(*args) without injecting c1/c2 the
+        # same way built-in modules are parsed. For YAML like [256, True], this can arrive as
+        # (c1=256, c2=True), where 256 is an unscaled nominal width. To stay robust, build
+        # channels lazily from actual runtime input; optionally honor explicit c2 when provided.
+        if isinstance(c2, bool):
+            shortcut = c2
+            c2 = None
+
+        self.n = int(n)
+        self.e = float(e)
+        self.heads = int(heads)
+        self.ws = int(ws)
+        self._explicit_c2 = int(c2) if c2 is not None else None
+
+        self.c = None
+        self.cv1 = None
+        self.cv2 = None
+        self.m = nn.ModuleList()
+
+    def _build(self, in_channels: int, device: torch.device) -> None:
+        out_channels = self._explicit_c2 if self._explicit_c2 is not None else int(in_channels)
+        self.c = max(1, int(out_channels * self.e))
+        self.cv1 = Conv(int(in_channels), 2 * self.c, 1, 1)
+        self.cv2 = Conv((2 + self.n) * self.c, out_channels, 1, 1)
+        self.m = nn.ModuleList(SwinWindowBlock(self.c, heads=self.heads, ws=self.ws) for _ in range(self.n))
+        self.to(device)
 
     def forward(self, x):
+        if self.cv1 is None or self.cv2 is None:
+            self._build(int(x.shape[1]), x.device)
         y = list(self.cv1(x).chunk(2, 1))
         for block in self.m:
             y.append(block(y[-1]))

@@ -1,0 +1,12 @@
+{
+  "model_yaml": "E:\\workout_programs\\MAJOR PROJECT\\Magnum_Inceptum\\FLS\\custom_c2f_swin_sonar\\configs\\yolov8n-sonar-swin.yaml",
+  "data_yaml": "E:\\workout_programs\\MAJOR PROJECT\\Magnum_Inceptum\\FLS\\baseline_sonar_yolo\\data\\yolo_sonar\\data.yaml",
+  "mAP50": 0.20646229330035296,
+  "mAP50_95": 0.06404747067107304,
+  "precision": 0.19306464842034135,
+  "recall": 0.3389952236482549,
+  "inference_ms": 2.8297652000328526,
+  "fps": 353.3862102722835,
+  "run_dir": "E:\\workout_programs\\MAJOR PROJECT\\Magnum_Inceptum\\FLS\\custom_c2f_swin_sonar\\runs\\detect\\sonar_swin_gpu_smoke2",
+  "checkpoints_saved": true
+}

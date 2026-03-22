@@ -1,11 +1,17 @@
 import argparse
 import csv
 import json
+import sys
 import time
 from pathlib import Path
 
 import torch
 from ultralytics import YOLO
+
+PROJECT_ROOT = Path(__file__).resolve().parents[1]
+if str(PROJECT_ROOT) not in sys.path:
+    sys.path.insert(0, str(PROJECT_ROOT))
+
 from src.tracking.payload import build_phuman_payload
 from src.tracking.sonar_box_expander import SonarBoxExpander
 
